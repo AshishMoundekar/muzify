@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- The <meta> tag defines metadata about an HTML document. Metadata is data (information) about data. -->
+    
+        <link rel="stylesheet" href="Style2.css"> <!-- This <link> tag use for linking CSS in HTML -->
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet"> <!-- This <link> tag use for linking font from the web in HTML -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> <!-- This link is used for profile arrow icon -->
+        <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Syne+Mono&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    
+        <title>Muzify</title>
+
+    </head>
+    
+    <body>
+
+        <!-- This is <div> tag it is used to divied web-page into parts with class "topbar" which helps to identify in CSS --> 
+        <div class="topbar">
+            
+            <!-- This <div> tag is subset of "topbar" --> 
+            <div class="topbar-container">
+                <!-- New <div> has start from here and subset of topbar-container  -->
+                <div class="logo-container">
+                    <!-- This <h1> contains website name -->
+                    <h1 class="logo">Muzify</h1>
+                </div>
+
+                <!-- New <div> has start from here and subset of topbar-container  -->
+                <div class="profile-container">
+                    <!-- <img> tag is used for insert image with src attribute which used as source for image -->
+                    <img class="profile-image" src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Alberto_conversi_profile_pic.jpg" alt="">
+                
+                    <div class="profile-text-container">
+                        <span class="profile-text">Profile</span>
+                        <!-- This used for arrow which shown in beside profile -->
+                        <i class="fa-sharp fa-solid fa-caret-down"></i>
+                    </div>    
+
+                    <div class="toggle">
+                        <i class="fa-solid fa-moon toggle-icon"></i>
+                        <i class="fa-solid fa-sun toggle-icon"></i>
+                        <div class="toggle-ball"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- This is another <div> tag it is used to divied web-page into parts with class "Sidebar" which helps to identify in CSS -->
+        <div class="sidebar">
+
+            <i class="left-menu-icon fa-solid fa-magnifying-glass"></i>
+            <a href="Index.html"><i class="left-menu-icon fa-solid fa-house-chimney"></i></a>
+            <i class="left-menu-icon fa-solid fa-users"></i>
+            <i class="left-menu-icon fa-solid fa-bookmark"></i>
+        </div>
+
+        <!-- This is yet another <div> for container(main content in website) -->
+        <div class="main_container">
+
+            <div class="container">
+                
+                <div class="top_container">
+
+                    <b style="font-size: 25px; font-family: 'Macondo', cursive; margin-left: 95px;"><i>Divine</i></b> <br> <br>
+                    
+                    <img src="img/indianrapsgenre.jpeg" alt="" class="img-title">
+                        
+                        <p class="img-desc">
+                            This quote by Vivian Fernandes a.k.a Divine is a sharp contradiction to what Indian hip hop has been traditionally associated with. <br> 
+                            There was a time not long ago that Indian hip hop conjured up an image of Honey Singh rapping about the ‘Blue Eyes’ or ‘Brown Rang’ of <br> 
+                            ladies who appeared in his music videos alongside expensive cars. <br> 
+                            However, the Indian audience has evolved and accepted a whole new definition of Indian hip hop with artists such as Divine and Naezy.
+                            <br> <br>
+                            With the massive success of ‘Gully Boy’, Zoya Akhtar’s film based on Mumbai’s rap culture, the audience has had a glimpse of <br> 
+                            what authentic and raw street rap looks like. It revolves around the struggles of rap artists who have risen from <br> 
+                            Mumbai’s underground rap scene brimming with stories of poverty, economic disparities, violence, social and political issues.
+
+                        </p>
+                    </img>
+
+                </div>
+
+                <div class="bottom_container">
+                            
+                        <div class="song_list2">
+                            <li class="song_Item">
+                                <span class="span">01</span>
+                                <img src="img/city slums.jpg" alt="DIVINE" class="img_song">
+                                <h5 class="h5">
+                                    City Slums <br>
+                                    <div class="subtitle">DIVINE</div>
+                                </h5>
+                                <div class="icon">
+                                    <audio controls class="audio">
+                                        <source src="audio/1.mp3" type="audio/mp3">
+                                        <i class="bi playListPlay bi-play-circle-fill" id="10"></i> &nbsp;
+                                    </audio>                                    
+                                </div>
+                            </li>
+
+                            <li class="song_Item">
+                                <span class="span">02</span>
+                                <img src="img/jungleesher.jpg" alt="DIVINE" class="img_song">
+                                <h5 class="h5">
+                                    junglee Sher <br>
+                                    <div class="subtitle">DIVINE</div>
+                                </h5>
+                                <div class="icon">
+                                    <audio controls class="audio">
+                                        <source src="audio/2.mp3" type="audio/mp3">
+                                        <i class="bi playListPlay bi-play-circle-fill" id="10"></i> &nbsp;
+                                    </audio>                                    
+                                </div>
+                            </li>
+
+                            <li class="song_Item">
+                                <span class="span">03</span>
+                                <img src="img/kohinoor album.jpg" alt="DIVINE" class="img_song">
+                                <h5 class="h5">
+                                    Chal Bombay<br>
+                                    <div class="subtitle">DIVINE</div>
+                                </h5>
+                                <div class="icon">
+                                    <audio controls class="audio">
+                                        <source src="audio/3.mp3" type="audio/mp3">
+                                        <i class="bi playListPlay bi-play-circle-fill" id="10"></i> &nbsp;
+                                    </audio>                                    
+                                </div>
+                            </li>
+
+                            <li class="song_Item">
+                                <span class="span">04</span>
+                                <img src="img/gullyboy.jpg" alt="DIVINE" class="img_song">
+                                <h5 class="h5">
+                                    Azadi <br>
+                                    <div class="subtitle">DIVINE</div>
+                                </h5>
+                                <div class="icon">
+                                    <audio controls class="audio">
+                                        <source src="audio/4.mp3" type="audio/mp3">
+                                        <i class="bi playListPlay bi-play-circle-fill" id="10"></i> &nbsp;
+                                    </audio>                                    
+                                </div>
+                            </li>
+                        </div>
+
+                        <div class="song_list2">
+                                
+                            <li class="song_Item">
+                                <span class="span">05</span>
+                                <img src="img/punyapap.jpg" alt="DIVINE" class="img_song">
+                                <h5 class="h5">
+                                    Satya <br>
+                                    <div class="subtitle">DIVINE</div>
+                                </h5>
+                                <div class="icon">
+                                    <audio controls class="audio">
+                                        <source src="audio/5.mp3" type="audio/mp3">
+                                        <i class="bi playListPlay bi-play-circle-fill" id="10"></i> &nbsp;
+                                    </audio>                                    
+                                </div>
+                            </li>
+
+                            <li class="song_Item">
+                                <span class="span">06</span>
+                                <img src="img/scenekyahe.jpg" alt="DIVINE" class="img_song">
+                                <h5 class="h5">
+                                  SceneKyahe  <br>
+                                    <div class="subtitle">DIVINE</div>
+                                </h5>
+                                <div class="icon">
+                                    <audio controls class="audio">
+                                        <source src="audio/6.mp3" type="audio/mp3">
+                                        <i class="bi playListPlay bi-play-circle-fill" id="10"></i> &nbsp;
+                                    </audio>                                    
+                                </div>
+                            </li>
+
+                            <li class="song_Item">
+                                <span class="span">07</span>
+                                <img src="img/mirchi.jpg" alt="DIVINE" class="img_song">
+                                <h5 class="h5">
+                                    MIRCHI <br>
+                                    <div class="subtitle">DIVINE</div>
+                                </h5>
+                                <div class="icon">
+                                    <audio controls class="audio">
+                                        <source src="audio/7.mp3" type="audio/mp3">
+                                        <i class="bi playListPlay bi-play-circle-fill" id="10"></i> &nbsp;
+                                    </audio>                                    
+                                </div>
+                            </li>
+
+                            <li class="song_Item">
+                                <span class="span">08</span>
+                                <img src="img/bazigarlbum.jpg" alt="DIVINE" class="img_song">
+                                <h5 class="h5">
+                                    Bazigar<br>
+                                    <div class="subtitle">DIVINE</div>
+                                </h5>
+                                <div class="icon">
+                                    <audio controls class="audio">
+                                        <source src="audio/8.mp3" type="audio/mp3">
+                                        <i class="bi playListPlay bi-play-circle-fill" id="10"></i> &nbsp;
+                                    </audio>                                    
+                                </div>
+                            </li>
+
+                            <li class="song_Item">
+                                <span class="span">09</span>
+                                <img src="img/punyapap.jpg" alt="DIVINE" class="img_song">
+                                <h5 class="h5">
+                                    Disco Rap <br>
+                                    <div class="subtitle">DIVINE</div>
+                                </h5>
+                                <div class="icon">
+                                    <audio controls class="audio">
+                                        <source src="audio/9.mp3" type="audio/mp3">
+                                        <i class="bi playListPlay bi-play-circle-fill" id="10"></i> &nbsp;
+                                    </audio>                                    
+                                </div>
+                            </li>
+
+                            <li class="song_Item">
+                                <span class="span">10</span>
+                                <img src="img/kohinoor album.jpg" alt="DIVINE" class="img_song">
+                                <h5 class="h5">
+                                    Vibe Hai <br>
+                                    <div class="subtitle">DIVINE</div>
+                                </h5>
+                                <div class="icon">
+                                    <audio controls class="audio">
+                                        <source src="audio/10.mp3" type="audio/mp3">
+                                    </audio>
+                                    
+                                </div>
+                            </li>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <!-- <script src="App.js"></script> -->
+</html>

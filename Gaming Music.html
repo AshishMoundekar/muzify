@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- The <meta> tag defines metadata about an HTML document. Metadata is data (information) about data. -->
+    
+        <link rel="stylesheet" href="Style2.css"> <!-- This <link> tag use for linking CSS in HTML -->
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet"> <!-- This <link> tag use for linking font from the web in HTML -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> <!-- This link is used for profile arrow icon -->
+        <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Syne+Mono&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+        
+    
+        <title>Muzify</title>
+
+    </head>
+    
+    <body>
+
+        <!-- This is <div> tag it is used to divied web-page into parts with class "topbar" which helps to identify in CSS --> 
+        <div class="topbar">
+            
+            <!-- This <div> tag is subset of "topbar" --> 
+            <div class="topbar-container">
+                <!-- New <div> has start from here and subset of topbar-container  -->
+                <div class="logo-container">
+                    <!-- This <h1> contains website name -->
+                    <h1 class="logo">Muzify</h1>
+                </div>
+
+                <!-- New <div> has start from here and subset of topbar-container  -->
+                <div class="profile-container">
+                    <!-- <img> tag is used for insert image with src attribute which used as source for image -->
+                    <img class="profile-image" src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Alberto_conversi_profile_pic.jpg" alt="">
+                
+                    <div class="profile-text-container">
+                        <span class="profile-text">Profile</span>
+                        <!-- This used for arrow which shown in beside profile -->
+                        <i class="fa-sharp fa-solid fa-caret-down"></i>
+                    </div>    
+
+                    <div class="toggle">
+                        <i class="fa-solid fa-moon toggle-icon"></i>
+                        <i class="fa-solid fa-sun toggle-icon"></i>
+                        <div class="toggle-ball"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- This is another <div> tag it is used to divied web-page into parts with class "Sidebar" which helps to identify in CSS -->
+        <div class="sidebar">
+
+            <i class="left-menu-icon fa-solid fa-magnifying-glass"></i>
+            <a href="Index.html"><i class="left-menu-icon fa-solid fa-house-chimney"></i></a>
+            <i class="left-menu-icon fa-solid fa-users"></i>
+            <i class="left-menu-icon fa-solid fa-bookmark"></i>
+        </div>
+
+        <!-- This is yet another <div> for container(main content in website) -->
+        <div class="main_container">
+            <div class="container">
+                
+                <div class="top_container">
+                    
+                    <img src="img/genre.png" alt="" class="img-title">
+                        
+                        <p class="img-desc">
+                            Gen Z gamers have a strong relationship with music—with music they hear in games, discover while watching game streamers share with other players, and listen to while gaming. This opens more opportunities for stronger partnerships and better integration  between music and gaming companies.<br> <br>
+                            For highly competitive player-versus-player (PvP) games, players may choose to have their own soundtracks,which help them feel more energized and 
+                            competitive, focus better, or simply maintain a good mood during a challenging game. <br><br>
+                        </p>
+                    </img>
+
+                </div>
+
+                <div class="bottom_container">
+
+                    <div class="artist-img">
+                        <h1 class="title-artist">
+                            Artist
+                        </h1>
+
+                        <div class="artist-img-wrapper">
+
+                            <div class="artist-img-list">
+
+                                <div class="artist-img-item">
+                                    <img src="img/artist1.jpg" alt="" class="artist-img-item-1">
+                                    <span class="artist-img-title">Garena Free Fire</span>
+                                    <p class="artist-img-desc">1,362,101 monthly listeners </p>
+                                </div>
+
+                                <div class="artist-img-item">
+                                    <img src="" alt="" class="artist-img-item-1">
+                                    <span class="artist-img-title">Techno-Gamerz Ujjwal</span>
+                                    <p class="artist-img-desc">362,101 monthly listeners </p>
+                                </div>
+
+                                <div class="artist-img-item">
+                                    <img src="img/CarryMinatiartist3.webp" alt="" class="artist-img-item-1">
+                                    <span class="artist-img-title">Carry Minati</span>
+                                    <p class="artist-img-desc">562,101 monthly listeners </p>
+                                </div>
+
+                                <div class="artist-img-item">
+                                    <img src="img/artist4.jpg" alt="" class="artist-img-item-1">
+                                    <span class="artist-img-title">Total Gaming</span>
+                                    <p class="artist-img-desc">62,101 monthly listeners </p>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                            
+                        <div class="song_list2">
+                            <li class="song_Item">
+                                <span class="span">01</span>
+                                <img src="img/too many dead.jpg" alt="Alan" class="img_song">
+                                <h5 class="h5">
+                                    Too Many Dead <br>
+                                    <div class="subtitle">Free Fire</div>
+                                </h5>
+                                <div class="icon">
+                                    <audio controls class="audio">
+                                    <source src="audio/Too Many Dead.mp3" type="audio/mp3">
+                                    <i class="bi playListPlay bi-play-circle-fill" id="10"></i> &nbsp;
+                                    </audio>
+                                </div>
+                            </li>
+
+                            <li class="song_Item">
+                                <span class="span">02</span>
+                                <img src="img/Yalgaar.jpg" alt="Alan" class="img_song">
+                                <h5 class="h5">
+                                    Yalgaar <br>
+                                    <div class="subtitle">Carry Minati</div>
+                                </h5>
+                                <div class="icon">
+                                    <audio controls class="audio">
+                                    <source src="audio/Yalgaar.mp3" type="audio/mp3">
+                                    <i class="bi playListPlay bi-play-circle-fill" id="10"></i> &nbsp;
+                                    </audio>
+                                </div>
+                            </li>
+
+                            <li class="song_Item">
+                                <span class="span">03</span>
+                                <img src="img/game on.jpg" alt="Alan" class="img_song">
+                                <h5 class="h5">
+                                    Game on <br>
+                                    <div class="subtitle">Ujjwal</div>
+                                </h5>
+                                <div class="icon">
+                                    <audio controls class="audio">
+                                    <source src="audio/Game On.mp3" type="audio/mp3">
+                                    <i class="bi playListPlay bi-play-circle-fill" id="10"></i> &nbsp;
+                                    </audio>
+                                </div>
+                            </li>
+
+                            <li class="song_Item">
+                                <span class="span">04</span>
+                                <img src="img/fire.jpg" alt="Alan" class="img_song">
+                                <h5 class="h5">
+                                    Fire <br>
+                                    <div class="subtitle">Total Gaming</div>
+                                </h5>
+                                <div class="icon">
+                                    <audio controls class="audio">
+                                    <source src="audio/Fire.mp3" type="audio/mp3">
+                                    <i class="bi playListPlay bi-play-circle-fill" id="10"></i> &nbsp;
+                                    </audio>
+                                </div>
+                            </li>
+
+                        </div>
+
+                        <div class="song_list2">
+                                
+                            <li class="song_Item">
+                                <span class="span">05</span>
+                                <img src="img/comandantes.jpg"Alan" class="img_song">
+                                <h5 class="h5">
+                                    Comandantes<br>
+                                    <div class="subtitle">Free Fire</div>
+                                </h5>
+                                <div class="icon">
+                                    <audio controls class="audio">
+                                    <source src="audio/comandantes.mp3" type="audio/mp3">
+                                    <i class="bi playListPlay bi-play-circle-fill" id="10"></i> &nbsp;
+                                    </audio>
+                                </div>
+                            </li>
+
+                            <li class="song_Item">
+                                <span class="span">06</span>
+                                <img src="img/vardaan.jpg" alt="Alan" class="img_song">
+                                <h5 class="h5">
+                                    Vardaan <br>
+                                    <div class="subtitle">Carry Minati</div>
+                                </h5>
+                                <div class="icon">
+                                    <audio controls class="audio">
+                                    <source src="audio/VARDAAN.mp3" type="audio/mp3">
+                                    <i class="bi playListPlay bi-play-circle-fill" id="10"></i> &nbsp;
+                                    </audio>
+                                </div>
+                            </li>
+
+                            <li class="song_Item">
+                                <span class="span">07</span>
+                                <img src="img/fuego.jpg" alt="Alan" class="img_song">
+                                <h5 class="h5">
+                                    fuego <br>
+                                    <div class="subtitle">Free Fire</div>
+                                </h5>
+                                <div class="icon">
+                                    <audio controls class="audio">
+                                    <source src="audio/fuego.mp3" type="audio/mp3">
+                                    <i class="bi playListPlay bi-play-circle-fill" id="10"></i> &nbsp;
+                                    </audio>
+                                </div>
+                            </li>
+
+                            <li class="song_Item">
+                                <span class="span">08</span>
+                                <img src="img/game on 2.o.jpg" alt="Alan" class="img_song">
+                                <h5 class="h5">
+                                    Game On 2.O <br>
+                                    <div class="subtitle">Ujjwal</div>
+                                </h5>
+                                <div class="icon">
+                                    <audio controls class="audio">
+                                    <source src="audio/Game On 2.0.mp3" type="audio/mp3">
+                                    <i class="bi playListPlay bi-play-circle-fill" id="10"></i> &nbsp;
+                                    </audio>
+                                </div>
+                            </li>
+
+                            <li class="song_Item">
+                                <span class="span">09</span>
+                                <img src="img/zindagi.jpg" alt="Alan" class="img_song">
+                                <h5 class="h5">
+                                    Zindagi <br>
+                                    <div class="subtitle">Carry Minati</div>
+                                </h5>
+                                <div class="icon">
+                                    <audio controls class="audio">
+                                    <source src="audio/Zindagi.mp3" type="audio/mp3">
+                                    <i class="bi playListPlay bi-play-circle-fill" id="10"></i> &nbsp;
+                                    </audio>
+                                </div>
+                            </li>
+
+                            <li class="song_Item">
+                                <span class="span">10</span>
+                                <img src="img/heroes arise.jpg" alt="Alan" class="img_song">
+                                <h5 class="h5">
+                                    Heroes Arise <br>
+                                    <div class="subtitle">Free Fire</div>
+                                </h5>
+                                <div class="icon">
+                                    <audio controls class="audio">
+                                    <source src="audio/Heroes Arise.mp3" type="audio/mp3">
+                                    <i class="bi playListPlay bi-play-circle-fill" id="10"></i> &nbsp;
+                                    </audio>
+                                </div>
+                            </li>
+
+                            <li class="song_Item">
+                                <span class="span">11</span>
+                                <img src="img/We Are Survivors.jpg" alt="Alan" class="img_song">
+                                <h5 class="h5">
+                                     We Are Survivors<br>
+                                    <div class="subtitle">Free Fire</div>
+                                </h5>
+                                <div class="icon">
+                                    <audio controls class="audio">
+                                    <source src="audio/We Are Survivors.mp3" type="audio/mp3">
+                                    <i class="bi playListPlay bi-play-circle-fill" id="10"></i> &nbsp;
+                                    </audio>
+                                </div>
+                            </li>
+
+                            <li class="song_Item">
+                                <span class="span">12</span>
+                                <img src="img/troublemaker.jpg" alt="Alan" class="img_song">
+                                <h5 class="h5">
+                                    troublemaker <br>
+                                    <div class="subtitle">Free fire</div>
+                                </h5>
+                                <div class="icon">
+                                    <audio controls class="audio">
+                                    <source src="audio/Troublemaker.mp3" type="audio/mp3">
+                                    <i class="bi playListPlay bi-play-circle-fill" id="10"></i> &nbsp;
+                                    </audio>
+                                </div>
+                            </li>
+
+                            <li class="song_Item">
+                                <span class="span">13</span>
+                                <img src="img/I'm on fire.jpg" alt="Alan" class="img_song">
+                                <h5 class="h5">
+                                    I'm on Fire <br>
+                                    <div class="subtitle">Free fire</div>
+                                </h5>
+                                <div class="icon">
+                                    <audio controls class="audio">
+                                    <source src="audio/I'm on fire.mp3" type="audio/mp3">
+                                    <i class="bi playListPlay bi-play-circle-fill" id="10"></i> &nbsp;
+                                    </audio>
+                                </div>
+                            </li>
+
+                            <li class="song_Item">
+                                <span class="span">14</span>
+                                <img src="img/legend in the making.jpg" alt="Alan" class="img_song">
+                                <h5 class="h5">
+                                    Legend In The making <br>
+                                    <div class="subtitle">Free fire</div>
+                                </h5>
+                                <div class="icon">
+                                    <audio controls class="audio">
+                                    <source src="audio/Legend in the making.mp3" type="audio/mp3">
+                                    <i class="bi playListPlay bi-play-circle-fill" id="10"></i> &nbsp;
+                                    </audio>
+                                </div>
+                            </li>
+
+                            <li class="song_Item">
+                                <span class="span">15</span>
+                                <img src="img/light of the world.jpg" alt="Alan" class="img_song">
+                                <h5 class="h5">
+                                    Light Of The world <br>
+                                    <div class="subtitle">Free Fire</div>
+                                </h5>
+                                <div class="icon">
+                                    <audio controls class="audio">                                    
+                                    <source src="audio/light of the world.mp3" type="audio/mp3">
+                                    <i class="bi playListPlay bi-play-circle-fill" id="10"></i> &nbsp;
+                                    </audio>
+                                </div>
+                            </li>
+
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </body>
+    <script src="App.js"></script>
+</html>

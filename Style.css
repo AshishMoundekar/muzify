@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+} /* This * {} used for universal for html website. */
+
+
+.topbar
+{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    position: sticky;
+    top: 0;
+}   /*Here we use '.' for to identify paticular class from paticular tag. For in this case it is used for div tag  */
+
+.topbar-container
+{
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    height: 100%;
+    color: white;/* Display flex means shrink to fit in the space available in its container. */
+}
+
+.topbar-container.active 
+{
+    background-color: #ABD699;
+    color: black;
+}
+
+.logo-container
+{
+    flex: 1;
+    font-family: 'Caveat', cursive;
+}
+
+.logo{
+    font-size: 30px;
+    color: white;
+    margin-left: 660px;
+}
+
+.logo.active{
+    color: #151515;
+}
+
+.menu-list
+{
+    display: flex;
+    list-style: none;
+}
+
+.menu-list-item
+{
+    margin-right: 30px;
+}
+
+.menu-list-item.active
+{
+    font-weight: bolder;
+    color: black;
+}
+
+.profile-container
+{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: 'Caveat', cursive;
+}
+
+.profile-image
+{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-text-container
+{
+    margin: 0 20px;
+}
+
+.toggle
+{
+   width: 40px;
+   height: 20px;
+   background-color: whitesmoke;
+   border-radius: 30px;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   position: relative;
+}
+
+.toggle-icon
+{
+    color: goldenrod;
+}
+
+.toggle.active
+{
+    background-color: black;
+}
+
+.toggle-ball
+{
+    width: 18px;
+    height: 18px;
+    background-color: black;
+    position: absolute;
+    right: 1px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s ease all;
+}
+  
+.toggle-ball.active
+{
+    background-color: white;
+    transform: translateX(-20px);
+}
+
+.sidebar 
+{
+    width: 50px;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.sidebar.active
+{
+    background-color: #ABD699;
+}
+
+.left-menu-icon
+{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.left-menu-icon.active
+{
+    color: black;
+}
+
+.container
+{
+    background-color: #151515;
+    min-height: calc(100vh - 50px);
+    color: white;
+}
+
+.container.active 
+{
+    background-color: #FFE28A;
+    color: #16123F;
+}
+
+.content-container
+{
+    margin-left: 50px;
+}
+
+.featured-content
+{
+    height: 50vh;
+    padding: 50px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url(img/bgimage.jpeg);
+}
+
+.featured-content.active
+{
+    background: linear-gradient(to bottom, rgba(0,0,0,0), #FFE28A), #ABD699;
+}
+
+.featured-title
+{
+    width: 350px;
+}
+
+.featured-desc
+{
+    /* width: 500px;
+    color: lightgrey;
+    margin: 30px 0;
+    font-size: 15px; */
+
+    width: 500px;
+    color: lightgrey;
+    margin: 10px 0;
+    font-size: 30px;
+    margin-left: 400px;
+    margin-top: 60px;
+    font-family: 'Macondo', cursive;
+}
+
+.featured-desc.active{
+    color: #16123F;
+}
+
+.featured-button
+{
+    background-color: #151515;
+    color: whitesmoke;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
+
+.songs-list-container
+{
+    padding: 20px 20px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.songs-list-wrapper
+{
+    position: relative;
+    overflow: hidden;
+}
+
+.songs_list 
+{
+    display: flex;
+    align-items: center;
+    height: 300px;
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+}
+
+.songs-list-item
+{
+    margin-right: 20px;
+    position: relative; 
+}
+
+.songs-list-item:hover .songs-list-item-img
+{
+    transform: scale(1.2) ;
+    margin: 0 30px;
+    opacity: 0.5;
+}
+
+.songs-list-item-img
+{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    transition: all 1s ease-in-out;
+    border-radius: 20px;
+}
+
+.songs-list-item-title
+{
+    background-color: #333;
+    color: aliceblue;
+    padding: 0 10px;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 0%;
+    left: 50px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+}
+
+.songs-list-title.active 
+{
+    color: black;
+}
+
+.songs-list-item-desc
+{
+    background-color: #333;
+    color: aliceblue;
+    padding: 10px;
+    font-size: 14px;
+    position: absolute;
+    top: 30%;
+    left: 50px;
+    width: 230px;
+    opacity: 0;
+    transition: 1s all ease-in-out; 
+}
+
+.songs-list-item-button
+{
+    padding: 10px;
+    background-color: greenyellow;
+    color: black;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 15px;
+    left: 50px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+}
+
+.songs-list-item:hover .songs-list-item-title,
+.songs-list-item:hover .songs-list-item-desc,
+.songs-list-item:hover .songs-list-item-button
+{
+    opacity: 1;
+}
+
+.arrows
+{
+    font-size: 120px;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    color: lightgray;
+    opacity: 0.5;
+    cursor: pointer;
+}
+ 
+@media only screen and (max-width: 940px)
+{
+    .menu-container
+    {
+        display: none;
+    }
+}
